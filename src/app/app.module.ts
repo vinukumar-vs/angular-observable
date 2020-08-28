@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GroupActivitiesComponent } from './components/group-activities/group-activities.component';
+import { ActivityListComponent } from './components/activity-list/activity-list.component';
+import { ContentDetailsComponent } from './components/content-details/content-details.component';
+import { AddToGroupDirective } from './directives/add-to-group.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GroupActivitiesComponent,
+    ActivityListComponent,
+    ContentDetailsComponent,
+    AddToGroupDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
